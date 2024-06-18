@@ -33,6 +33,12 @@
 
   header{
     background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0);
+
+
   }
 
 .container{
@@ -72,5 +78,26 @@ nav{
         transition: 0.2s ease-in-out;
         transition: 0.2s ease-in;
     }
-    
+   .hero-section{
+    background-image: url(./images/hero_image.png);
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+   }
+
+   .hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+
+  .hero-section h1{
+    font-size: 96px;
+  }
+
+  .hero-section h3{
+    font-size:32px ;
+  }
 
