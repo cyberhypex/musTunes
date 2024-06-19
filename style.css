@@ -14,7 +14,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-
+  
   html,body{
     font-family:   "Playwrite PL", cursive;
     font-weight: 300;
@@ -100,4 +100,149 @@ nav{
   .hero-section h3{
     font-size:32px ;
   }
+
+  .music-section{
+    padding-top: 50px;
+    background: var(--purple500);
+    
+  }
+
+  .music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .ipad-iphone-img{
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+  }
+
+  button{
+    padding:10px 15px;
+    border: #f9f6ff;
+    transition: 0.2s ease-in-out;
+    border-radius: 15px;
+  }
+
+  button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+  }
+
+  .primary-button{
+    background: var(--red600);
+    color: white;
+
+  }
+
+ 
+
+  .about-music{
+    padding-top: 50px;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    text-align: center;
+   margin-bottom: 50px;
+  }
+
+  .secondary-btn {
+    background-color: var(--purple300);
+    color: white;
+  }
+.video-section{
+  background-image: url(./images/video.png);
+  min-height: 900px;
+  display: grid;
+  place-items: center;
+  color: white;
+  text-align: center;
+
+}
+.video-section .container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: -200px;
+
+
+}
+
+.hero-section,.video-section{
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gift-section{
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+  gap: 50px;
+
+}
+
+.gift-content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ask{
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color:var(--purple300); /* Optional: for better visibility */
+}
+
+footer h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+footer .link {
+  display: flex;
+  justify-content: center;
+}
+
+footer .container {
+  display: inline-block;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer li {
+  margin: 10px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color:white; /* Customize the color as needed */
+  font-size: 16px;
+  gap: 30px;
+  padding: 30px;
+}
+
+.copyright{
+  text-align: center;
+  font-weight: 100px;
+  color: white;
+}
+
+.ask{
+  margin-bottom: 30px;
+}
 
