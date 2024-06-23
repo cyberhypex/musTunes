@@ -13,12 +13,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    overflow-x: hidden; 
   }
   
-  html,body{
+ html,body{
     font-family:   "Playwrite PL", cursive;
     font-weight: 300;
     line-height: 1.4;
+    font-size: 1.6rem;
    
 
   }
@@ -82,8 +85,9 @@ nav{
    .hero-section{
     background-image: url(./images/hero_image.png);
     height: 100vh;
-    display: grid;
+    
     color: white;
+    display: flex;
     place-items: center;
     text-align: center;
    }
@@ -95,11 +99,16 @@ nav{
    }
 
   .hero-section h1{
-    font-size: 96px;
+    font-size: 9.6rem;
+    
+    
+    
   }
+  
 
   .hero-section h3{
-    font-size:32px ;
+    font-size:3.2rem ;
+    
   }
 
   .music-section{
@@ -120,7 +129,7 @@ nav{
   .ipad-iphone-img{
     position: relative;
     top: 400px;
-    margin-top: -400px;
+    /* margin-top: -400px; */
   }
 
   button{
@@ -184,10 +193,18 @@ nav{
 .gift-section{
   display: flex;
   justify-content: center;
-  margin: 100px 0;
+  position: relative;
   gap: 50px;
 
 }
+ .gift-card img{
+  max-width: 100%;
+  height: auto;
+  margin-top: 50px;
+  
+ 
+  
+ }
 
 .gift-content{
   display: flex;
@@ -209,6 +226,8 @@ footer {
 
 
 
+
+
 footer h2 {
   margin-bottom: 20px;
   color: white;
@@ -222,6 +241,7 @@ footer .link {
 footer .container {
   display: inline-block;
   flex-wrap: wrap;
+  color:#f9f6ff;
 }
 
 
@@ -244,6 +264,10 @@ footer a {
  
 }
 
+html{
+  font-size: 62.5%;
+}
+
 .copyright{
   text-align: center;
   font-weight: 100px;
@@ -262,7 +286,20 @@ footer a {
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
+
+  .gift-section{
+    flex-direction: column;
+  }
+
+  .gift-section img{
+    max-width: 100%;
+  }
+ html{
+  font-size: 45%;
+ }
+ 
+
  nav ul{
   display: none;
  }
@@ -286,12 +323,59 @@ footer a {
 
 }
 
+@media screen and (max-width:370px) {
+  .hero-section h1{
+    font-size: 6.2rem;
+    
+    
+    
+    
+  }
+
+  
+}
+@media screen and (max-width:264px) {
+  .hero-section h1{
+    font-size: 4.2rem;
+    
+    
+    
+    
+  }
+
+  
+}
+
 
 @media screen and (min-width:768px){
   .menu_bar{
     display: none;
   }
+  
 }
+
+.ask #say h2 {
+  /* Add your desired styles for the h2 here */
+  
+  font-size: 1.8rem;
+  text-align: center;
+
+}
+
+@media screen and (max-width:1024px){
+  .iphone-ipad-image img ,
+  .mac-img img
+  {
+    max-width: 100%;
+  }
+
+  .gift-card img{
+    width: 40.0rem;
+  }
+  
+}
+
+
 
 
 
